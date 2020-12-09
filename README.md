@@ -28,3 +28,11 @@
 
 + 包括前向差分，后向差分，中心差分，Euler scheme, leapfrog，Crank-Nicolson scheme等，后面将会继续添加finite element, finite volume, ENO/WENO, spectral method等；
 + 符号/odeint/手写数值算法的误差比较，ODE/PDE(包括heat, wave, convection, Burgers等)的数值求解（ICs/BCs）。
+
+
+
+## program_Trefethen
+
++ 包含了Chebyshev谱方法等数值方法的简单实现
++ KdV的数值解
++ 这在Julia 1.0环境下测试通过，但目前在Julia 1.5环境下好多以前放在基本库环境中的函数都被修改或放在了具体的库中了，比如diagm等线性代数操作已经被放在了特定的LinearAlgebra库中，这些问题有时间会进行更新测试。
